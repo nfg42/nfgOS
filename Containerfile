@@ -4,7 +4,7 @@ COPY build_files /
 
 # Base Image
 FROM ghcr.io/ublue-os/bazzite-nvidia-open:latest as nfgos
-COPY system_files /
+#COPY system_files /
 
 ## Other possible base images include:
 # FROM ghcr.io/ublue-os/bazzite:latest
