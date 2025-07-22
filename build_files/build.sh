@@ -22,11 +22,10 @@ declare -A RPM_PACKAGES=(
     ksystemlog \
     nmap \
     openrgb \
-    printer-driver-brlaser \
     qemu-kvm \
     util-linux \
     virt-manager \
-    virt-viewer \
+    virt-viewer"
 
   ["terra"]="\
     coolercontrol \
