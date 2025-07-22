@@ -3,7 +3,7 @@ FROM scratch AS ctx
 COPY build_files /
 
 # Base Image
-FROM ghcr.io/ublue-os/bazzite-nvidia-open:latest as nfgos
+FROM ghcr.io/ublue-os/bazzite-nvidia-open:stable as nfgos
 #COPY system_files /
 
 ## Other possible base images include:
