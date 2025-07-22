@@ -13,6 +13,7 @@ mkdir /nix
 # RPM packages list
 declare -A RPM_PACKAGES=(
   ["fedora"]="\
+    aria2 \
     bchunk \
     bleachbit \
     gparted \
