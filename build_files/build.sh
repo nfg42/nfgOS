@@ -47,8 +47,8 @@ declare -A RPM_PACKAGES=(
     vlc-plugin-pause-click \
     vlc"
 
-  ["brave-browser"]="brave-browser"
-  ["vscode"]="code"
+#  ["brave-browser"]="brave-browser"
+#  ["vscode"]="code"
 )
 
 log "Starting NFG OS build process"
