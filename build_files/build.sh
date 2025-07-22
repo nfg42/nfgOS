@@ -23,6 +23,6 @@ dnf5 install -y tmux htop
 
 systemctl enable podman.socket
 
-mkdir /var/nix
-ln -s /nix /var/nix
-rmdir /var/nix
+#mkdir /var/nix
+ln -s /var/nix /nix
+#rmdir /var/nix
