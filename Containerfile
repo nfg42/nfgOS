@@ -3,7 +3,7 @@ FROM scratch AS ctx
 COPY build_files /
 
 # Base Image
-FROM aurora-dx-nvidia-open:stable as nfgos
+FROM ghcr. io/ublue-os/aurora-dx-nvidia-open:latest as nfgos
 # ghcr.io/ublue-os/bazzite-nvidia:stable as nfgos
 #COPY system_files /
 
