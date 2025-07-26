@@ -21,6 +21,7 @@ declare -A RPM_PACKAGES=(
     kcalc \
     kgpg \
     ksystemlog \
+    lutris \
     nmap \
     openrgb \
     qemu-kvm \
