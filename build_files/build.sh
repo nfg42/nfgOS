@@ -87,13 +87,13 @@ install -m 0755 "$CLI_DIR/cursor" /usr/bin/cursor-cli
 #log "Adding Amy OS just recipes"
 #echo "import \"/usr/share/amyos/just/amy.just\"" >>/usr/share/ublue-os/justfile
 
-log "Hide incompatible Bazzite just recipes"
-for recipe in "install-coolercontrol" "install-openrgb"; do
-  if ! grep -l "^$recipe:" /usr/share/ublue-os/just/*.just | grep -q .; then
-    echo "Error: Recipe $recipe not found in any just file"
-    exit 1
-  fi
-  sed -i "s/^$recipe:/_$recipe:/" /usr/share/ublue-os/just/*.just
-done
+#log "Hide incompatible Bazzite just recipes"
+#for recipe in "install-coolercontrol" "install-openrgb"; do
+#  if ! grep -l "^$recipe:" /usr/share/ublue-os/just/*.just | grep -q .; then
+#    echo "Error: Recipe $recipe not found in any just file"
+#    exit 1
+#  fi
+#  sed -i "s/^$recipe:/_$recipe:/" /usr/share/ublue-os/just/*.just
+#done
 
 log "Build process completed"
