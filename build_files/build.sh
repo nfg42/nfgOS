@@ -30,18 +30,11 @@ declare -A RPM_PACKAGES=(
     virt-manager \
     virt-viewer"
 
-  ["terra"]="\
-    ghostty \
-    hack-nerd-fonts \
-    starship \
-    ubuntu-nerd-fonts \
-    ubuntumono-nerd-fonts \
-    ubuntusans-nerd-fonts"
-
   ["fedora-multimedia"]="\
     HandBrake-cli \
     HandBrake-gui \
     haruna \
+    kodi \
     mpv \
     vlc-plugin-bittorrent \
     vlc-plugin-ffmpeg \
@@ -77,13 +70,14 @@ done
 
 log "Enabling system services"
 systemctl enable libvirtd.service
+systemctl enable kodi.service
 
-log "Installing Cursor CLI"
-CLI_DIR="/tmp/cursor-cli"
-mkdir -p "$CLI_DIR"
-aria2c --dir="$CLI_DIR" --out="cursor-cli.tar.gz" --max-tries=3 --connect-timeout=30 "https://api2.cursor.sh/updates/download-latest?os=cli-alpine-x64"
-tar -xzf "$CLI_DIR/cursor-cli.tar.gz" -C "$CLI_DIR"
-install -m 0755 "$CLI_DIR/cursor" /usr/bin/cursor-cli
+#log "Installing Cursor CLI"
+#CLI_DIR="/tmp/cursor-cli"
+#mkdir -p "$CLI_DIR"
+#aria2c --dir="$CLI_DIR" --out="cursor-cli.tar.gz" --max-tries=3 --connect-timeout=30 "https://api2.cursor.sh/updates/download-latest?os=cli-alpine-x64"
+#tar -xzf "$CLI_DIR/cursor-cli.tar.gz" -C "$CLI_DIR"
+#install -m 0755 "$CLI_DIR/cursor" /usr/bin/cursor-cli
 
 #log "Adding Amy OS just recipes"
 #echo "import \"/usr/share/amyos/just/amy.just\"" >>/usr/share/ublue-os/justfile
