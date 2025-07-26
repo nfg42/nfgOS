@@ -24,6 +24,7 @@ declare -A RPM_PACKAGES=(
     nmap \
     openrgb \
     qemu-kvm \
+    steam \
     util-linux \
     virt-manager \
     virt-viewer"
