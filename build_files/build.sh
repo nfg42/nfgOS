@@ -30,7 +30,6 @@ declare -A RPM_PACKAGES=(
     virt-viewer"
 
   ["terra"]="\
-    coolercontrol \
     ghostty \
     hack-nerd-fonts \
     starship \
